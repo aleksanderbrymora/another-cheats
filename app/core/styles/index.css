@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  width: 100%;
+  color: #333;
+}
+
+.title {
+  margin: 0;
+  width: 100%;
+  padding-top: 80px;
+  line-height: 1.15;
+  font-size: 48px;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.label-transition label {
+  top: 0%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: rgba(37, 99, 235, 1);
+}
+.label-transition.empty input:not(:focus) + label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+.label-transition input:not(:focus) + label {
+  color: rgba(70, 70, 70, 1);
+}
+.label-transition input {
+  border-width: 1px;
+}
+.label-transition input:focus {
+  outline: none;
+  border-color: rgba(37, 99, 235, 1);
+}
